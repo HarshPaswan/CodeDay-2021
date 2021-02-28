@@ -57,7 +57,7 @@ def city_name():
     min_temp.place(x=128, y=460) 
     note = Label(root, text="All temperatures are in degree celsius",bg='white', font=("italic", 10)) 
     note.place(x=95, y=495)  
-    api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city_entry.get() + "&units=metric&appid=" + "1987b31fcf1da3359611b45c4db65153") 
+    api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city_entry.get() + "&units=metric&appid=" + "Insert own API Key Here") 
   
     api = json.loads(api_request.content) 
   
